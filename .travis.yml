@@ -1,0 +1,7 @@
+node_js:
+- "0.10"
+- "1"
+sudo: false
+language: node_js
+before_script: "npm i -g codecov.io"
+script: "npm run test-cov-ci | codecov"
